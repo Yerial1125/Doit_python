@@ -22,7 +22,7 @@ def writecsv(filename, the_list) :
 # CSV형 리스트에서 숫자형 변환
 
 def switch(list_name) :
-    for i in list_name
+    for i in list_name :
         for j in i :
             try :
                 i[i.index(j)] = float(re.sub(',','',j))
